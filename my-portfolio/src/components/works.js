@@ -3,7 +3,7 @@ import work2 from '../assets/img/work_2.png'
 import work3 from '../assets/img/work_3.png'
 import work4 from '../assets/img/work_4.png'
 import work5 from '../assets/img/work_5.png'
-import work6 from '../assets/img/work-6.jpg'
+// import work6 from '../assets/img/work-6.jpg'
 
 function Works(){
     return (

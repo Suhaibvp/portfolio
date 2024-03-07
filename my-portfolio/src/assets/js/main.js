@@ -11,7 +11,7 @@ import Swiper from 'swiper';
 import PureCounter from "@srexi/purecounterjs";
 
 (function() {
-  "use strict";
+
 
   /**
    * Easy selector helper function

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './index.css';
-import App from './App';
 import Navbar from './components/navigation';
 import Hero from './components/hero.js';
 import About from './components/about.js';
@@ -18,7 +17,6 @@ import '../src/assets/vendor/bootstrap/css/bootstrap.min.css';
 import '../src/assets/vendor/bootstrap-icons/bootstrap-icons.css';
 import '../src/assets/vendor/glightbox/css/glightbox.min.css';
 import '../src/assets/vendor/swiper/swiper-bundle.min.css';
-import { ReactTyped } from 'react-typed';
 import '../src/assets/js/main.js';
 import Blog1Details from './components/blog1details.js';
 import Blog2Details from './components/blog2Details.js';
