@@ -17,7 +17,7 @@ function Contact(){
                     </h5>
                   </div>
                   <div>
-                    <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                    <form action="forms/contact.php" method="post" className="php-email-form">
                       <div className="row">
                         <div className="col-md-12 mb-3">
                           <div className="form-group">
@@ -72,10 +72,10 @@ function Contact(){
                   </div>
                   <div className="socials">
                     <ul>
-                      <li><a href=""><span className="ico-circle"><i className="bi bi-facebook"></i></span></a></li>
-                      <li><a href=""><span className="ico-circle"><i className="bi bi-instagram"></i></span></a></li>
-                      <li><a href=""><span className="ico-circle"><i className="bi bi-twitter"></i></span></a></li>
-                      <li><a href=""><span className="ico-circle"><i className="bi bi-linkedin"></i></span></a></li>
+                      <li><a href="#contact"><span className="ico-circle"><i className="bi bi-facebook"></i></span></a></li>
+                      <li><a href="#contact"><span className="ico-circle"><i className="bi bi-instagram"></i></span></a></li>
+                      <li><a href="#contact"><span className="ico-circle"><i className="bi bi-twitter"></i></span></a></li>
+                      <li><a href="#contact"><span className="ico-circle"><i className="bi bi-linkedin"></i></span></a></li>
                     </ul>
                   </div>
                 </div>

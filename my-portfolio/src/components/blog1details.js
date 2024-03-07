@@ -193,7 +193,7 @@ function Blog1Details(){
                 <p>
                 Mathematically, it's expressed as the sum of (a * b) for each pixel and weight pair in the kernel.
                 </p>
-                <img src={summing_image} alt='Summing image' style={{ width: newWidth }} />
+                <img src={summing_image} alt='Summing_image' style={{ width: newWidth }} />
 
                 <p><b>4. Traversing the Entire Image</b></p>
                 <p>
@@ -202,35 +202,35 @@ function Blog1Details(){
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-md-6 mb-3 text-center'>       
-                            <img src={trav1} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav1} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p >1</p>
                         </div>
                         
                         <div className='col-md-6 mb-3 text-center'>
                         
-                            <img src={trav2} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav2} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p>2</p>
                         </div>
 
                     </div>
                     <div className='row'>
                         <div className='col-md-6 mb-3 text-center'>
-                            <img src={trav3} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav3} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p>3</p>
                         </div>
                         <div className='col-md-6 mb-3 text-center'>
                         
-                            <img src={trav4} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav4} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p>4</p>
                         </div>
                     </div>
                     <div className='row'>
                         <div className='col-md-6 mb-4 text-center'>                        
-                            <img src={trav5} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav5} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p>5</p>
                         </div>
                         <div className='col-md-6 mb-4 text-center'>                            
-                            <img src={trav6} alt='Summing image' className='img-fluid' style={{ width: '100%' }} />
+                            <img src={trav6} alt='Summing_image' className='img-fluid' style={{ width: '100%' }} />
                             <p>6</p>
                         </div>
 
@@ -241,13 +241,13 @@ function Blog1Details(){
                 Mathematically, it's expressed as the sum of (a * b) for each pixel and weight pair in the kernel.
                 </p>
                 <br />
-                <img src={equ1} alt='Summing image' className='img-fluid' style={{ width: '50%' }} />
+                <img src={equ1} alt='Summing_image' className='img-fluid' style={{ width: '50%' }} />
                 <br />
                 <br />
                 <p>
                 In discrete terms (for digital images), the convolution operation can be expressed as:
                 </p>
-                <img src={equ2} alt='Summing image' className='img-fluid' style={{ width: '70%' }} />
+                <img src={equ2} alt='Summing_image' className='img-fluid' style={{ width: '70%' }} />
                 <br />
                 <br />
                 <p>
@@ -257,7 +257,7 @@ function Blog1Details(){
                 <p>
                 Consider a simple 3x3 image matrix f and a 3x3 filter matrix g. The convolution operation involves sliding the filter over the image, multiplying corresponding elements, and summing the results to obtain the output image.
                 </p>
-                <img src={matrix1} alt='Summing image' className='img-fluid' style={{ width: '40%' }} />
+                <img src={matrix1} alt='Summing_image' className='img-fluid' style={{ width: '40%' }} />
                 <p>
                 The convolution operation (f∗g) results in a new image matrix where each pixel is obtained by multiplying and summing the values based on the filter weights.
                 </p>
@@ -272,26 +272,26 @@ function Blog1Details(){
                 <p>
                 where f is the input image, g is the filter, and ( I , j ) represents the position in the output image.
                 </p>
-                <img src={matrix2} alt='Summing image' className='img-fluid' style={{ width: '20%' }} />
+                <img src={matrix2} alt='Summing_image' className='img-fluid' style={{ width: '20%' }} />
                 <p>
                 Before applying this kernel to the image during convolution, we need to flip it both horizontally and vertically. Let's break down the flipping process:
                 </p>
                 <p>
                 Original Kernel:
                 </p>
-                <img src={matrix3} alt='Summing image' className='img-fluid' style={{ width: '20%' }} />
+                <img src={matrix3} alt='Summing_image' className='img-fluid' style={{ width: '20%' }} />
                 <p>
                 Horizontally Flipped Kernel:
                 </p>
-                <img src={matrix4} alt='Summing image' className='img-fluid' style={{ width: '20%' }} />
+                <img src={matrix4} alt='Summing_image' className='img-fluid' style={{ width: '20%' }} />
                 <p>
                 Vertically Flipped Kernel:
                 </p>
-                <img src={matrix5} alt='Summing image' className='img-fluid' style={{ width: '20%' }} />
+                <img src={matrix5} alt='Summing_image' className='img-fluid' style={{ width: '20%' }} />
                 <p>
                 Flipped Both Horizontally and Vertically:
                 </p>
-                <img src={matrix6} alt='Summing image' className='img-fluid' style={{ width: '20%' }} />
+                <img src={matrix6} alt='Summing_image' className='img-fluid' style={{ width: '20%' }} />
                 <br />
                 <p>
                 Now, this flipped kernel is ready for the convolution process. During convolution, this flipped kernel will slide over the pixels of the image, performing mathematical operations at each position as explained in the previous steps.

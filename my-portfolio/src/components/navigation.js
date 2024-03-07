@@ -6,7 +6,7 @@ function Navbar() {
     <div className="nav">      
     <div className="container d-flex align-items-center justify-content-between">
 
-    <h1 className="logo"><a href="#">.</a></h1>
+    <h1 className="logo"><a href="#header">.</a></h1>
 
 
 

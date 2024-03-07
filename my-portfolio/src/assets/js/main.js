@@ -6,9 +6,8 @@
 * License: https://bootstrapmade.com/license/
 */
 import { ReactTyped } from "react-typed";
-import GLightbox from 'glightbox';
 import Swiper from 'swiper';
-import PureCounter from "@srexi/purecounterjs";
+
 
 (function() {
 
@@ -183,9 +182,7 @@ import PureCounter from "@srexi/purecounterjs";
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+
 
   /**
    * Testimonials slider
@@ -235,6 +232,6 @@ import PureCounter from "@srexi/purecounterjs";
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+
 
 })()

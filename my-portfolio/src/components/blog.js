@@ -1,6 +1,5 @@
 import blog1 from '../assets/img/Designer (6).jpg'
 import blog2 from '../assets/img/test2 (1).jpg'
-import blog3 from '../assets/img/post-3.jpg'
 import userImage from '../assets/img/hero_bg.jpg';
 
 import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card.tsx';
