@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#hero {
+  background-image: url('../src/assets/img/hero_bg.jpg'); /* Adjust the path based on your project structure */
+  /* Add other styles as needed */
+}
+.section-counter{
+  background-image: url('../src/assets/img/counters-bg.jpg');
+}
+.profile{
+  height: 50px;
+  background-color: red;
+}
+
+.custom-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh; /* Adjust the height as needed */
+  overflow-y: auto;
+  background-color: #31473A; /* Add background color as needed */
+  border-right: 1px solid #dee2e6; /* Add a border for separation */
+  width: 50%;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+
+}
+.section-index{
+  background-color: black;
+}
+a{
+  text-decoration: none;
+}
+.bghero{
+  background-image: url(../src/assets/img/overlay-bg.jpg);
+}
