@@ -3,11 +3,24 @@ import work2 from '../assets/img/work_2.png'
 import work3 from '../assets/img/work_3.png'
 import work4 from '../assets/img/work_4.png'
 import work5 from '../assets/img/work_5.png'
-// import work6 from '../assets/img/work-6.jpg'
+import bgImgae from '../assets/img/hero_bg.jpg'
+
 
 function Works(){
+  const sectionStyle={
+    backgroundImage: `url(${bgImgae})`, 
+  }
+  const containerStyle={
+    backgroundColor:'White',
+    color:'black',
+    borderRadius:'20px',
+  }
+
     return (
-      <section id="work" class="portfolio-mf sect-pt4 route">
+      <section id="work" class="portfolio-mf sect-pt4 route bg-image" style={sectionStyle}>
+        <div className="container">
+    <div className="row" >
+      <div className="col-sm-12 box-shadow-full" style={containerStyle}>
         <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -23,30 +36,37 @@ function Works(){
           </div>
         </div>
         <div className="row">
-          <div className="col-md-4">
+
+          <div className="col-md-4 ">
             <div className="work-box">
               <a href={work1} data-gallery="portfolioGallery" className="portfolio-lightbox">
                 <div className="work-img">
                   <img src={work1} alt="" className="img-fluid" />
                 </div>
               </a>
-              <div className="work-content">
-                <div className="row">
-                  <div className="col-sm-8">
-                    <h2 className="w-title">FOODBOOK</h2>
-                    <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
-                    </div>
+              <div className="work-item">
+                  <div className="work-content">
+                      <div className="row">
+                          <div className="col-sm-12">
+                              <h2 className="w-title">FOODBOOK</h2>
+                              <div className="work-description-container">
+                                  <p className="w-description">
+                                    Developed a web application using Python and Django, enabling users to view food prices,
+                                    administrators to add food items with details and prices, and users to place orders.
+                                    Implemented with MySQL, Bootstrap, HTML, CSS, and JavaScript.
+                                  </p>
+                              </div>
+                              <div className="w-more">
+                                  <span className="w-ctegory"><a href='https://github.com/Suhaibvp/FOODBOOK' target="_blank" rel="noopener noreferrer">GIT LINK</a></span> / <span className="w-date">18 Sep. 2022</span>
+                              </div>
+                          </div>
+
+                      </div>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+
           <div className="col-md-4">
             <div className="work-box">
               <a href={work2} data-gallery="portfolioGallery" className="portfolio-lightbox">
@@ -56,17 +76,20 @@ function Works(){
               </a>
               <div className="work-content">
                 <div className="row">
-                  <div className="col-sm-8">
+                  <div className="col-sm-12">
                     <h2 className="w-title">CONNECTOR - A Social Media Platform.</h2>
+                    <div className="work-description-container">
+        <p className="w-description">
+        Created a social media platform using Flutter and Dart,
+        facilitating users to chat, share posts, view others’ posts, and set status updates. Integrated external platforms
+        like Messenger, WhatsApp, and Instagram for messaging through Firebase Cloud.
+        </p>
+      </div>
                     <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
+                      <span className="w-ctegory"><a href='https://github.com/Suhaibvp/connector' target="_blank" rel="noopener noreferrer">GIT LINK</a></span> / <span className="w-date">11 Apr. 2023</span>
                     </div>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -80,17 +103,20 @@ function Works(){
               </a>
               <div className="work-content">
                 <div className="row">
-                  <div className="col-sm-8">
+                  <div className="col-sm-12">
                     <h2 className="w-title">EPICENE </h2>
+                    <div className="work-description-container">
+        <p className="w-description">
+        Engineered a communication platform in Python and Flask, offering users the ability to connect
+        with professionals, seek assistance from lawyers, doctors, and psychologists, and request meetings. Admincontrolled user registration with location-specific coordinator approvals. Utilized MySQL, Java, HTML, CSS,
+        and JavaScript for development
+        </p>
+      </div>
                     <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
+                      <span className="w-ctegory"><a href='https://github.com/Suhaibvp/epicene' target="_blank" rel="noopener noreferrer">GIT LINK</a></span> / <span className="w-date">18 Sep. 2018</span>
                     </div>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -104,17 +130,20 @@ function Works(){
               </a>
               <div className="work-content">
                 <div className="row">
-                  <div className="col-sm-8">
+                  <div className="col-sm-12">
                     <h2 className="w-title">COMPUTER VISION</h2>
+                    <div className="work-description-container">
+                      <p className="w-description">
+                      Engineered an object detection model using Python with the YOLOv8 architecture,
+                      incorporating a pretrained model and custom dataset. Successfully implemented object detection, tracking, and
+                      pose detection, demonstrating advanced skills in computer vision and model customization.
+        </p>
+      </div>
                     <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
+                      <span className="w-date">1 Jan. 2024</span>
                     </div>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -128,48 +157,31 @@ function Works(){
               </a>
               <div className="work-content">
                 <div className="row">
-                  <div className="col-sm-8">
+                  <div className="col-sm-12">
                     <h2 className="w-title">School-grievance</h2>
+                    <div className="work-description-container">
+                    <p className="w-description">
+                      Developed a web application using Python and Django, enabling users to view food prices,
+                      administrators to add food items with details and prices, and users to place orders.
+                      Implemented with MySQL, Bootstrap, HTML, CSS, and JavaScript.
+                    </p>
+                  </div>
                     <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2018</span>
+                      <span className="w-ctegory"><a href='https://github.com/Suhaibvp/School-grievance' target="_blank" rel="noopener noreferrer">GIT LINK</a></span> / <span className="w-date">18 Sep. 2018</span>
                     </div>
                   </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>
           </div>
-          {/* <div className="col-md-4">
-            <div className="work-box">
-              <a href={work6} data-gallery="portfolioGallery" className="portfolio-lightbox">
-                <div className="work-img">
-                  <img src={work6} alt="" className="img-fluid" />
-                </div>
-              </a>
-              <div className="work-content">
-                <div className="row">
-                  <div className="col-sm-8">
-                    <h2 className="w-title">Studio Big Bang</h2>
-                    <div className="w-more">
-                      <span className="w-ctegory">Web Design</span> / <span className="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div className="col-sm-4">
-                    <div className="w-like">
-                      <a href="portfolio-details.html"> <span className="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
         </div>
       </div>
+      </div>
+      </div>
+      </div>
+      
       </section>
     )
 }

@@ -1,10 +1,12 @@
+import bgImgae from '../assets/img/hero_bg.jpg'
 function Contact(){
+  const sectionStyle={
+    backgroundImage: `url(${bgImgae})`, 
+  }
     return (
 
-      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" >
-      <div class="overlay-mf"></div>
+      <section id="contact" class="paralax-mf footer-paralax bg-image route" style={sectionStyle}>
       <div id="contacts" class="container">
-
         <div className="row">
         <div className="col-sm-12">
           <div className="contact-mf">

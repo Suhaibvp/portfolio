@@ -1,7 +1,7 @@
 import blog1 from '../assets/img/Designer (6).jpg'
 import blog2 from '../assets/img/test2 (1).jpg'
 import userImage from '../assets/img/hero_bg.jpg';
-
+import bgImgae from '../assets/img/hero_bg.jpg'
 import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card.tsx';
 
 
@@ -11,9 +11,19 @@ import { CardContainer, CardBody, CardItem } from '../components/ui/3d-card.tsx'
 
 
 function Blog(){
-  
+  const sectionStyle={
+    backgroundImage: `url(${bgImgae})`, 
+  }
+  const containerStyle={
+    backgroundColor:'White',
+    color:'black',
+    borderRadius:'20px',
+  }
     return(
-      <section id="blog" class="blog-mf sect-pt4 route">
+      <section id="blog" class="blog-mf sect-pt4 route bg-image" style={sectionStyle}>
+                <div className="container">
+    <div className="row" >
+      <div className="col-sm-12 box-shadow-full" style={containerStyle}>
         <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -31,11 +41,11 @@ function Blog(){
         <div className="row">
 
           <div className="col-md-4">
-          <CardContainer className="inter-var">
-            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+          <CardContainer className="inter-var skillContainer">
+            <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.0] dark:bg-black  w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <div className="card card-blog">
               <div className="card-img">
-                <a href='/blog1'>
+                <a href='https://suhaib-blogs.netlify.app/articles/convolution'>
                     <CardItem
                         translateZ="100"
                         rotateX={0}
@@ -62,7 +72,7 @@ function Blog(){
                   translateZ="50"
                   className="text-s font-bold text-neutral-600 dark:text-white"
                   >
-                  <a href="../blog1">Convolution-The Mathematical Core of Image Processing
+                  <a href="https://suhaib-blogs.netlify.app/articles/convolution">Convolution-The Mathematical Core of Image Processing
                   </a>
 
                 </CardItem>
@@ -94,11 +104,11 @@ function Blog(){
 
 
           <div className="col-md-4">
-          <CardContainer className="inter-var">
+          <CardContainer className="inter-var skillContainer">
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <div className="card card-blog">
               <div className="card-img">
-                <a href='/blog1'>
+                <a href='#blog'>
                     <CardItem
                         translateZ="100"
                         rotateX={0}
@@ -125,7 +135,7 @@ function Blog(){
                   translateZ="50"
                   className="text-s font-bold text-neutral-600 dark:text-white"
                   >
-                  <a href="../blog1">Convolution-The Mathematical Core of Image Processing
+                  <a href="#blog">Convolution-The Mathematical Core of Image Processing
                   </a>
 
                 </CardItem>
@@ -156,6 +166,9 @@ function Blog(){
           </div>
 
         </div>
+      </div>
+      </div>
+      </div>
       </div>
       
       </section>

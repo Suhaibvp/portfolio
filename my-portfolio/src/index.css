@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#hero {
+.hero {
   background-image: url('../src/assets/img/hero_bg.jpg'); /* Adjust the path based on your project structure */
   /* Add other styles as needed */
 }
@@ -43,6 +43,61 @@ code {
 a{
   text-decoration: none;
 }
-.bghero{
-  background-image: url(../src/assets/img/overlay-bg.jpg);
+
+
+
+
+.section-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
 }
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Define animation keyframes for pop effect */
+@keyframes popIn {
+  from {
+    opacity: 1;
+    transform: scale(0.5) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+
+/* #ServiceContainer.active{
+  animation: popIn 1s ease-in-out; 
+} */
+
+
+.skillContainer{
+  border-radius: 30px;
+  background: #fafafa;
+  box-shadow:  5px 5px 13px #9e9e9e,
+               -5px -5px 13px #ffffff;
+}
+
+.work-description-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; 
+  text-align: center;
+}
+
+.work-content:hover .work-description-container {
+  max-height: 200px; /* Adjust the max height as needed */
+}
+
+
+
+
+
+
+

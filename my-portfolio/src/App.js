@@ -1,13 +1,36 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import './App.css';
+import Navbar from './components/navigation';
+import Hero from './components/hero';
+import About from './components/about';
+import Services from './components/services';
+import Works from './components/works';
 
-function App() {
+
+
+const App = () => {
+
+
   return (
-    <div className="App">      
-      <header id="header" class="fixed-top">
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Navbar />
+              <Hero />
+              <About />
+              <Services />
+              <Works />
+              
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,9 +1,10 @@
 import userImage from '../assets/img/profile.jpg';
+import bgImgae from '../assets/img/hero_bg.jpg'
 
 
 function About() {
   const customStyle = {
-    width: '120px', // set your desired width
+    width: '150px', // set your desired width
     height: 'auto', // 'auto' maintains the aspect ratio, adjust as needed
     marginLeft:'30px'
   }
@@ -17,21 +18,27 @@ function About() {
     backgroundColor:'white',
     borderRadius:'10px',
   }
+  const sectionStyle={
+    backgroundImage: `url(${bgImgae})`, 
+  }
+
+
+  
   return (
-    <section id="about" class="about-mf sect-pt4 route" >
+    <section id="about" className="about-mf sect-pt4 route bg-image about" style={sectionStyle} >
     <div className="container" style={containerStyle}>
     <div className="row" style={containerStyle}>
-      <div className="col-sm-12" style={containerStyle}>
+      <div className="col-sm-12 " style={containerStyle}>
         <div className="box-shadow-full" style={containerinsideStyle}>
-          <div className="row" style={containerinsideStyle}>
-            <div className="col-md-6">
+          <div className="row " style={containerinsideStyle}>
+            <div className="col-md-6 ">
               <div className="row">
-                <div className="col-sm-6 col-md-5">
+                <div className="col-sm-6 col-md-5 ">
                   <div className="about-img">
-                    <img src={userImage} style={customStyle} className="img-fluid rounded b-shadow-a profile" alt="user Profile"/>
+                    <img src={userImage} style={customStyle} className="img-fluid rounded b-shadow-a profile skillContainer" alt="user Profile"/>
                   </div>
                 </div>
-                <div className="col-sm-6 col-md-7">
+                <div className="col-sm-5 col-md-6 skillContainer p-3">
                   <div className="about-info">
                     <p><span className="title-s">Name: </span> <span>Suhaib VP</span></p>
                     <p><span className="title-s">Profile: </span> <span>Software Engineer</span></p>
@@ -40,10 +47,10 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="row">
+              <div className="row skillContainer p-3 m-5">
               <p className="title-s">Skills</p>
-    <div className="col-md-6 well">
-        <div className="skill-mf border rounded p-3">
+              <div className="col-md-5 ">
+        <div className="skill-mf  rounded p-3">
 
             <ul className="skills-list">
                 <li>Python</li>
@@ -57,9 +64,10 @@ function About() {
             </ul>
         </div>
     </div>
+    <div className="col-md-1"></div>
 
-    <div className="col-md-6">
-        <div className="skill-mf border rounded p-3">
+    <div className="col-md-5 ">
+        <div className="skill-mf rounded p-3">
 
             <ul className="skills-list">
             <li>Xamarin</li>
@@ -78,7 +86,7 @@ function About() {
 
 
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 skillContainer p-3">
               <div className="about-me pt-4 pt-md-0">
                 <div className="title-box-2">
                   <h5 className="title-left">

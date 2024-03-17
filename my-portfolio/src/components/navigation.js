@@ -16,9 +16,9 @@ function Navbar() {
     <li><a className="nav-link scrollto" href="#about">About</a></li>
     <li><a className="nav-link scrollto" href="#services">Projects</a></li>
     <li><a className="nav-link scrollto " href="#work">Work</a></li>
-    <li><a className="nav-link scrollto " href="#blog">Blog</a></li>
+    <li><a className="nav-link scrollto " href="https://suhaib-blogs.netlify.app" target="_blank" rel="noopener noreferrer">Blog</a></li>
 
-    <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
+    {/* <li><a className="nav-link scrollto" href="#contact">Contact</a></li> */}
   </ul>
   <i className="bi bi-list mobile-nav-toggle"></i>
 </nav>

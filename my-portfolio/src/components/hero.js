@@ -8,28 +8,36 @@ function Hero() {
     if (typedElement) {
       const typed_strings = typedElement.getAttribute('data-typed-items').split(',');
 
-      new Typed(typedElement, {
+      const options = {
         strings: typed_strings,
-        loop: true,
         typeSpeed: 100,
         backSpeed: 50,
-        backDelay: 200,
-      });
+        backDelay: 2000, // Adjust back delay to make typing more natural
+        loop: true,
+        loopCount: Infinity, // Set loopCount to Infinity for continuous looping
+      };
+
+      const typed = new Typed(typedElement, options);
+
+      // Clear Typed instance when component unmounts
+      return () => {
+        typed.destroy();
+      };
     }
   }, []);
 
   return (
-    <div id="hero" class="hero route bg-image" >
-    <div id="hero" className="hero route bg-image">
+    <div id="hero" class="route bg-image" >
+    <div  className="hero route bg-image">
       <div className="overlay-itro"></div>
       <div className="hero-content display-table">
         <div className="table-cell">
           <div className="container">
             <h1 className="hero-title mb-4">I am Suhaib VP</h1>
             <p className="hero-subtitle">
-              <span className="typed" data-typed-items="Software Developer, Software Engineer, App Developer,">
-                Test
-              </span>
+              
+              Software Engineer
+              
             </p>
           </div>
         </div>
